@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Food Menu</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Food Menu</h1>
+    
+    <div class="filter-buttons" id="filterButtons">
+      <button onclick="filterMenu('all')" class="active">All</button>
+      <button onclick="filterMenu('breakfast')">Breakfast</button>
+      <button onclick="filterMenu('lunch')">Lunch</button>
+      <button onclick="filterMenu('shakes')">Shakes</button>
+      <button onclick="filterMenu('dinner')">Dinner</button>
+    </div>
+
+    <div class="menu-container" id="menuContainer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

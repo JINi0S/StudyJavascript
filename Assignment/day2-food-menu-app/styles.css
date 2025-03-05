@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.filter-buttons button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.filter-buttons button.active {
+    background-color: #7261e1;
+    color: white;
+}
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+.food-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    padding: 16px;
+    text-align: left;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+.food-card img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    align-content: center;
+    border-radius: 8px;
+}
+.food-info {
+    display: flex;
+    flex-direction: column; /* 정보를 세로로 정렬 */
+}
+.food-info h3 {
+    margin: 12px 0; 
+}
+.food-info p {
+    margin: 6px 0; 
+}
+.food-info p strong {
+    margin: 12px 0; 
+    color: #7261e1;
+}
+
+h1 {
+  text-align: center;
+  color: #7261e1;
+}
