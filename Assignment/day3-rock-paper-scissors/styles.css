@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #7261e1;
+    text-align: center;
+    align-items: center; /* 가운데 정렬 (선택 사항) */
+}
+.game-score .players {
+    color: #ffff;
+    display: flex;
+    flex-direction: column; /*세로 정렬*/
+    align-items: center; /* 가운데 정렬 (선택 사항) */
+    margin: 12px 12px; 
+}
+.game-score {
+    display: flex;
+    flex-direction: row; /* 세로 정렬 */
+    align-items: center; /*가운데 정렬 (선택 사항)*/
+    margin: 12px 12px; 
+}
+.on-game-end button #retry {
+    margin: 0 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    color:pink;
+    border-radius: 5px;
+}
+
+
+/* 전체 페이지 스타일 */
+
+/* 제목 스타일 */
+h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* 점수판 스타일 */
+.game-score {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 0;
+}
+
+.players {
+    background-color:#f1c0ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin: 5px 0;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+/* 게임 버튼 스타일 */
+.game-button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+button:not(.active) {
+    background-color: #ffffff;
+}
+
+/* 게임 종료 화면 */
+.on-game-end {
+    /* display: none; */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.on-game-end div {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#retry {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+}

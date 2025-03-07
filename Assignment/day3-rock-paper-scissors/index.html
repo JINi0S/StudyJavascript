@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>가위바위보</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>가위바위보</h1>
+    <div class="game-score">
+      <div class="players" id="player">
+        <h2>플레이어</h2>
+        <h2 id="playerScore">0</h2>
+      </div>
+
+      <div class="players" id="computer">
+        <h2>컴퓨터</h2>
+        <h2 id="computerScore">0</h2>
+      </div>
+    </div>
+
+    <div class="on-game" id="game-container">
+      <h3>선택하기</h3>
+      <div id="remainContent">
+        남은 횟수
+        <div id="remainCount"></div>
+      </div>
+      <div class="game-button" id="filterButtons">
+        <button onclick="playGame('가위')">가위</button>
+        <button onclick="playGame('바위')">바위</button>
+        <button onclick="playGame('보')">보</button>
+      </div>
+
+      <div id="game-result"></div>
+    </div>
+    
+    <div class="on-game-end" id="game-end-container">
+      <div class="on-game-end">게임종료</div>
+      <div id="game-play-result"></div>
+      <button class="on-game-end" id="retry" onclick=restartGame()>다시시작</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
