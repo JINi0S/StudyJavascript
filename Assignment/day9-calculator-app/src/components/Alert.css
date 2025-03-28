@@ -1,0 +1,15 @@
+/* 알림 스타일 */
+.alert {
+  position: fixed;
+  bottom: 20px; /* 알림이 처음에 화면 아래로 나오도록 설정 */
+  left: 50%;
+  transform: translateX(-50%); /* 가운데 정렬 */
+  background-color: #2b6df1d8; /* 녹색 배경 */
+  color: white;
+  padding: 16px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1000; /* 다른 요소들보다 위에 표시 */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
+}
